@@ -1,0 +1,11 @@
+Common ParentK12Education
+    documentation "This is an example of a new common type containing domain entity references."
+    domain entity Student
+        documentation "The parent's student record from their K-12 education."
+        is required //This domain entity reference is required.
+    domain entity StudentAcademicRecord
+        documentation "The parent's final high school academic record."
+        is optional //This domain entity reference is optional.
+    domain entity CourseTranscript
+        documentation "The parent's course transcripts from their K-12 education."
+        is optional collection //This domain entity reference is a collection.

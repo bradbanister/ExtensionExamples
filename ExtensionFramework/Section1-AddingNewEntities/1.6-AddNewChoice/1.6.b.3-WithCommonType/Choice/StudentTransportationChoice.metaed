@@ -1,0 +1,10 @@
+Choice StudentTransportationChoice
+    documentation "This is an example of a new choice type containing common types."
+    inline common Name
+        documentation "The name of the individual responsible for drop-off/pick up."
+        is required
+        with context TransportationContact
+    inline common Name
+        documentation "The name of the bus driver."
+        is required
+        with context BusDriver

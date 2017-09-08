@@ -1,0 +1,15 @@
+Association StudentGraduationPlanAssociation
+    documentation "This is an example of a new association containing simple types."
+    domain entity Student
+        documentation "The student assigned the graduation plan."
+    domain entity GraduationPlan
+        documentation "The graduation plan assigned to the student."
+    association StudentSchoolAssociation
+        documentation "The student's primary enrollment from which the diploma will be conferred."
+        is required //This association reference is required.
+    association StudentCTEProgramAssociation
+        documentation "The student's enrollment in a career and technical education program."
+        is optional //This association reference is optional.
+    association StudentProgramAssociation
+        documentation "The student's enrollment in dropout recovery or other programs designed to ensure graduation."
+        is optional collection //This association reference is a collection.

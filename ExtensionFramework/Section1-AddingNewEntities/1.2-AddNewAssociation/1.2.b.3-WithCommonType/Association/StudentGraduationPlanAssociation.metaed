@@ -1,0 +1,12 @@
+Association StudentGraduationPlanAssociation
+    documentation "This is an example of a new association containing common types."
+    domain entity Student
+        documentation "The student assigned the graduation plan."
+    domain entity GraduationPlan
+        documentation "The graduation plan assigned to the student."
+    inline common Achievement
+        documentation "The achievement(s) the student will have earned upon graduation."
+        is required collection //This common type is required and is a collection.
+    common CTEProgram
+        documentation "The career and technical education program the student is completing."
+        is optional //This common type is optional.

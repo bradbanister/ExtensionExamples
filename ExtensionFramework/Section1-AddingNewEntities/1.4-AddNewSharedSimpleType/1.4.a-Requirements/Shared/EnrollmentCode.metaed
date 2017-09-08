@@ -1,0 +1,5 @@
+Shared Integer EnrollmentCode
+//Note that this must be a unique name.
+    documentation "This is an example of a new shared integer."
+    min value 0 //This is an optional part of a shared integer definition.
+    max value 10 //This is an optional part of a shared integer definition.

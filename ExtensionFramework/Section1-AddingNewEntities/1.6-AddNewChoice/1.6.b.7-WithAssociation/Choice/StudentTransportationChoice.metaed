@@ -1,0 +1,8 @@
+Choice StudentTransportationChoice //The name of the choice ends with "Choice".
+    documentation "This is an example of a new choice type."
+    association StudentParentAssociation
+        documentation "The individuals associated with the student who have permission to transport the student."
+        is optional collection
+    association StudentProgramAssociation
+        documentation "The student's enrollment in a before- or after-school program."
+        is optional

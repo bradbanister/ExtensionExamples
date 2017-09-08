@@ -1,0 +1,11 @@
+Common ParentSchoolSystemEmployment
+    documentation "This is an example of a new common type containing association references."
+    association StaffEducationOrganizationEmploymentAssociation
+        documentation "The parent's employment record with the school system."
+        is required //This association reference is required.
+    association StaffEducationOrganizationAssignmentAssociation
+        documentation "The parent's assignment records with the school system."
+        is required collection //This association reference is a collection.
+    association StaffSectionAssociation
+        documentation "The sections the parent teaches, if any."
+        is optional collection //This association reference is optional and is a collection.

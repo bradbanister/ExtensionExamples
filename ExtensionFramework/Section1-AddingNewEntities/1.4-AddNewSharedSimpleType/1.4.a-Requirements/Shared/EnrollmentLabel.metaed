@@ -1,0 +1,5 @@
+Shared String EnrollmentLabel
+//Note that this must be a unique name.
+    documentation "This is an example of a new shared string."
+    min length 1 //This is an optional part of a shared string definition.
+    max length 20 //This is a required part of a shared string definition.

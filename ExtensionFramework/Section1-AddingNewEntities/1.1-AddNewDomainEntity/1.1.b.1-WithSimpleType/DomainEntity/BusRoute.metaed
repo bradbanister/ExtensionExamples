@@ -1,0 +1,16 @@
+Domain Entity BusRoute
+    documentation "This is an example of a new domain entity containing simple types."
+    integer BusRouteNumber
+        documentation "The bus number associated with the bus and route."
+        is part of identity
+    string BusRouteDirection
+        documentation "The direction of the bus route."
+        is required //This simple type is required.
+        max length 15
+    string BusRouteDays
+        documentation "The days that the bus route is active."
+        is optional collection //This simple type is a collection.
+        max length 50
+    time StartTime
+        documentation "The start time of the bus route."
+        is optional //This simple type is optional.

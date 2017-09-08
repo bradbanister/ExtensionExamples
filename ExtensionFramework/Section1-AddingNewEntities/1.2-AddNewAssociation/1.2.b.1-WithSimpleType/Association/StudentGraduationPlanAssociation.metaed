@@ -1,0 +1,16 @@
+Association StudentGraduationPlanAssociation
+    documentation "This is an example of a new association containing simple types."
+    domain entity Student
+        documentation "The student assigned the graduation plan."
+    domain entity GraduationPlan
+        documentation "The graduation plan assigned to the student."
+    date EffectiveDate
+        documentation "The date the graduation plan was put into effect for the student."
+        is required //This simple type is required.
+    bool IsActivePlan
+        documentation "An indication as to whether this graduation plan is currently active for the student."
+        is optional //This simple type is optional.
+    string IndustryCredential
+        documentation "The names of any industry-recognized credentials the student will have earned at graduation."
+        is optional collection //This simpele type is a colleciton.
+        max length 100

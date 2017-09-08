@@ -1,0 +1,11 @@
+Descriptor ProgramParticipationStatus
+    documentation "This is an example of a new descriptor containing association references."
+    association StudentProgramAssociation
+        documentation "The first student program enrollment that required the addition of this descriptor value."
+        is required //This descriptor reference is required.
+    association StaffEducationOrganizationAssignmentAssociation
+        documentation "The staff who added the descriptor value and the assignment the staff was fulfilling when adding the descriptor value."
+        is optional //This descriptor reference is optional.
+    association StudentDisciplineIncidentAssociation
+        documentation "Student involvement in discipline incidents that led to the addition of this program participation code."
+        is optional collection //This descriptor reference is a collection.

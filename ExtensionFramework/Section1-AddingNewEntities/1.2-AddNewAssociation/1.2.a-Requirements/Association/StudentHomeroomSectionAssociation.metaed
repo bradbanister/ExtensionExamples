@@ -1,0 +1,12 @@
+Association StudentHomeroomSectionAssociation
+//Note that an association already exists between Student and Section,
+//so additional context must be provided in the Association name.
+    documentation "This is an example of a second association between two entities."
+    domain entity Student
+        documentation "The student enrolled in the homeroom section."
+    domain entity Section
+        documentation "The section that serves as the student's homeroom."
+    string AssemblySeatingSection
+        documentation "The section of the gymnasium in which the homeroom sits for assemblies."
+        is optional
+        max length 10

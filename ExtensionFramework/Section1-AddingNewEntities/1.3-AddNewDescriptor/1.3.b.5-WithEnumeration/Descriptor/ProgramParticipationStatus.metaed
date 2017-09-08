@@ -1,0 +1,8 @@
+Descriptor ProgramParticipationStatus
+    documentation "This is an example of a new descriptor containing enumeration references."
+    enumeration ProgramType
+        documentation "The type of program that uses a particular program participation status value."
+        is required  //This enumeration reference is required.
+    enumeration SchoolCategory
+        documentation "The types of schools that use a particular program participation status value."
+        is optional collection //This enumeration reference is optional and is a collection.

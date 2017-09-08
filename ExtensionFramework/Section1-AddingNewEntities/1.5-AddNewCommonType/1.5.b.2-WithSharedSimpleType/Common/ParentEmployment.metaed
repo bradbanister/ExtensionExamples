@@ -1,0 +1,11 @@
+Common ParentEmployment
+    documentation "This is an example of a new common type containing shared types."
+    shared string City
+        documentation "The city in which the parent works the majority of the time."
+        is required //This shared type is required.
+    shared string PostalCode
+        documentation "The postal code in which the parent works the majority of the time."
+        is optional //This shared type is optional.
+    shared string PositionTitle
+        documentation "The parent's job title(s)."
+        is required collection //This shared type is a collection.

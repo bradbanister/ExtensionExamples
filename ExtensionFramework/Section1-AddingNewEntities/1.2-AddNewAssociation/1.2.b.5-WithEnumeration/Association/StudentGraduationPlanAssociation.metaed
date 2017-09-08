@@ -1,0 +1,15 @@
+Association StudentGraduationPlanAssociation
+    documentation "This is an example of a new association containing enumeration references."
+    domain entity Student
+        documentation "The student assigned the graduation plan."
+    domain entity GraduationPlan
+        documentation "The graduation plan assigned to the student."
+    enumeration DiplomaType
+        documentation "The type of diploma the student will have earned at graduation."
+        is required //This enumeration reference is required.
+    enumeration DiplomaLevel
+        documentation "The level of the diploma that will be awarded to the student at graduation."
+        is optional //This enumeration reference is optional.
+    enumeration AcademicHonorCategory
+        documentation "The type of honors(s) the student will have earned at graduation."
+        is optional collection //This enumeration reference is optional and is a collection.

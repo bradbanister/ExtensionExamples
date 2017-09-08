@@ -1,0 +1,11 @@
+Domain Entity BusRoute
+    documentation "This is an example of a new domain entity that includes descriptor references."
+    integer BusRouteNumber
+        documentation "The identifier for the bus and route."
+        is part of identity
+    descriptor GradeLevel
+        documentation "The grade levels served by this bus route."
+        is required collection //This descriptor reference is both required and a collection. 
+    descriptor Disability
+        documentation "The specific disability served by this bus route."
+        is optional //This descriptor reference is optional.

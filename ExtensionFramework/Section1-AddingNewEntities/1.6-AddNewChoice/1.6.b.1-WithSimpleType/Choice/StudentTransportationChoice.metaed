@@ -1,0 +1,9 @@
+Choice StudentTransportationChoice
+    documentation "This is an example of a new choice type containing simple types."
+    string ContactName
+        documentation "The name(s) of the individual(s) responsible for drop-off/pick-up for the student."
+        is required collection //This simple type is a collection.
+        max length 100
+    integer BusNumber
+        documentation "The bus number of the bus that transports the student."
+        is required //This simple type is not a collection.

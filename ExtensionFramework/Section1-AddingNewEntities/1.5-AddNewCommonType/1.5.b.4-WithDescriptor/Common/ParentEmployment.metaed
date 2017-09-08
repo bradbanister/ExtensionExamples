@@ -1,0 +1,11 @@
+Common ParentEmployment
+    documentation "This is an example of a new common type containing descriptor references."
+    descriptor LevelOfEducation
+        documentation "The highest level of education completed by the parent."
+        is required //This descriptor reference is required.
+    descriptor SeparationReason
+        documentation "The reason for unemployment, if applicable."
+        is optional //This descriptor reference is optional.
+    descriptor Country
+        documentation "The countries in which the parent's employer does business and to which the parent may travel for work."
+        is optional collection //This descriptor reference is a collection.

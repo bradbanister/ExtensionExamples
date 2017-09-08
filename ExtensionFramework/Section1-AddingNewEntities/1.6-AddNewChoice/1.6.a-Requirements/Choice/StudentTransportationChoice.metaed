@@ -1,0 +1,12 @@
+Choice StudentTransportationChoice //The name of the choice ends with "Choice".
+    documentation "This is an example of a new choice type."
+    domain entity Parent //At least two properties must be included.
+        documentation "The individuals who have permission to pick up the child from school."
+        is required collection //Choice types may NOT contain identity properties.
+    string BusRoute //At least two properties must be included.
+        documentation "The name of the bus route that transports the student."
+        is required //Choice types may NOT contain identity properties.
+        max length 50
+    association StudentProgramAssociation //More than two properties may be included.
+        documentation "The student's enrollment in a before or after school program."
+        is required //Choice types may NOT contain identity properties.

@@ -1,0 +1,14 @@
+Domain Entity BusRoute
+    documentation "This is an example of a new domain entity containing shared simple types."
+    shared string IdentificationCode named BusRouteNumber //Note that shared types may optionally be renamed when referenced.
+        documentation "This identifier associated with the bus and route."
+        is part of identity
+    shared decimal HoursPerWeek
+        documentation "The number of hours the bus is in service per week."
+        is required //This shared type is required.
+    shared integer Duration named BusRouteDuration
+        documentation "The number of minutes the bus is in service per active day."
+        is optional //This shared type is optional.
+    shared string PostalCode named ServiceAreaPostalCode
+        documentation "The regions that the bus serves."
+        is required collection //This shared type is a collection.

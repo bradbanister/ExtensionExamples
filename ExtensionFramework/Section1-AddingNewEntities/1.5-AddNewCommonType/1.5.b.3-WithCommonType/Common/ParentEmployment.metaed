@@ -1,0 +1,11 @@
+Common ParentEmployment
+    documentation "This is an example of a new common type containing references to other common types."
+    common Address
+        documentation "The address associated with the parent's employment."
+        is optional //This common type is optional.
+    common Telephone
+        documentation "The telephone number where the parent may be reached at work."
+        is required //This common type is required.
+    common ElectronicMail
+        documentation "The email address where the parent may be reached at work."
+        is optional collection //This common type is a collection.

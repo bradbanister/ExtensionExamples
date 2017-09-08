@@ -1,0 +1,11 @@
+Association StudentSchoolAssociation additions
+//This is an example of how newly added shared simple types may be referenced.
+    shared integer EnrollmentCode
+        documentation "The unique 10-digit identifier for the student's enrollment."
+        is required //This shared simple type is required.
+    shared string EnrollmentLabel
+        documentation "A descriptive label for the student's enrollment."
+        is optional collection //This shared simple type is a collection.
+    shared decimal FullTimeEquivalency
+        documentation "The ratio of time the student is enrolled compared to a full-time student."
+        is optional //This shared simple type is optional.

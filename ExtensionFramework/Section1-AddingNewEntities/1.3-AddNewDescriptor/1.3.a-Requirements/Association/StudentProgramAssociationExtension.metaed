@@ -1,0 +1,4 @@
+Association StudentProgramAssociation additions
+    descriptor ProgramParticipationStatus
+        documentation "This is an example of how the newly added descriptor may be referenced."
+        is optional

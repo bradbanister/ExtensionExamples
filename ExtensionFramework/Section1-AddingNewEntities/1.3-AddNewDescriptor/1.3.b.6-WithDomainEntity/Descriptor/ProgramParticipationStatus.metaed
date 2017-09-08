@@ -1,0 +1,11 @@
+Descriptor ProgramParticipationStatus
+    documentation "This is an example of a new descriptor containing domain entity references."
+    domain entity Staff
+        documentation "The staff member who added the descriptor value."
+        is required //This domain entity reference is required.
+    domain entity LocalEducationAgency
+        documentation "The local education agency that added the descriptor value."
+        is optional //This domain entity reference is optional.
+    domain entity Program
+        documentation "The program that uses the particular program participation status value."
+        is required collection //This domain entity reference is a collection.

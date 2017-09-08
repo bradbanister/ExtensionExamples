@@ -1,0 +1,12 @@
+Descriptor ProgramParticipationStatus
+    documentation "This is an example of a new descriptor containing simple types."
+    bool IsActive
+        documentation "An indication as to whether the descriptor value is still in use."
+        is required //This simple type is required.
+    date ProposedDate
+        documentation "The date this descriptor value was proposed for addition."
+        is optional //This simple type is optional.
+    string VendorName
+        documentation "The name(s) of the vendor(s) submitting the descriptor value."
+        is optional collection //This simple type is a collection.
+        max length 50

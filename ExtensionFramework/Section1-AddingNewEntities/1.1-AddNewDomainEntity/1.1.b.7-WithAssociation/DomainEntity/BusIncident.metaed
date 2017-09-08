@@ -1,0 +1,11 @@
+Domain Entity BusIncident
+    documentation "This is an example of a new domain entity that contains references to associations."
+    integer BusIncidentIdentifier
+        documentation "The identifier for the bus incident."
+        is part of identity
+    association StaffEducationOrganizationAssignmentAssociation
+        documentation "The assignment the bus driver was fulfilling when the incident occurred."
+        is required //This association reference is required.
+    association StudentSchoolAssociation
+        documentation "The students impacted by the incident and the schools to/from which they were being transported."
+        is optional collection //This association is both optional and a collection.

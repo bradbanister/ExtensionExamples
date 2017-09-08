@@ -1,0 +1,11 @@
+Descriptor ProgramParticipationStatus
+    documentation "This is an example of a new descriptor containing shared types."
+    shared string Author
+        documentation "The individual who added the descriptor value."
+        is required //This shared type is required.
+    shared string DocumentTitle
+        documentation "The name of the document or report requiring the addition of the descriptor value."
+        is optional //This shared type is optional.
+    shared string ProgramName
+        documentation "The name(s) of the program(s) using the descriptor value."
+        is optional collection //This shared type is a collection.

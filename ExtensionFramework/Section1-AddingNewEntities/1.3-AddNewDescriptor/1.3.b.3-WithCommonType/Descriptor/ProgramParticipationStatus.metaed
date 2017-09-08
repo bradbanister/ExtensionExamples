@@ -1,0 +1,13 @@
+Descriptor ProgramParticipationStatus
+    documentation "This is an example of a new descriptor containing common types."
+    inline common Name
+        documentation "The name of the individual who added the descriptor value."
+        is required //This common type is required.
+        with context Creator
+    common Telephone
+        documentation "The telephone number of the individual who added the descriptor value."
+        is optional //This common type is optional.
+        with context Creator
+    common ElectronicMail
+        documentation "The electronic mail addresses of the individual who added the descriptor value."
+        is optional collection //This common type is a collection.

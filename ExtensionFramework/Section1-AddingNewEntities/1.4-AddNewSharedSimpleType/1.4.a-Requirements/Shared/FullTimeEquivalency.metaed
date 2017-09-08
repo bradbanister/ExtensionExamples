@@ -1,0 +1,7 @@
+Shared Decimal FullTimeEquivalency
+//Note that this must be a unique name.
+    documentation "This an example of a new shared decimal."
+    total digits 3 //This is a required part of a shared decimal definition.
+    decimal places 2 //This is a required part of a shared decimal definition.
+    min value 0 //This is an optional part of a shared decimal definition.
+    max value 1 //This is an optional part of a shared decimal definition.

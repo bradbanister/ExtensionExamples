@@ -1,0 +1,8 @@
+Descriptor ProgramParticipationStatus
+    documentation "This is an example of a new descriptor containing other descriptor references."
+    descriptor GradeLevel
+        documentation "The grade level(s) for which the participation status value is applicable."
+        is required collection //This descriptor reference is required and is a collection.
+    descriptor ReasonExited
+        documentation "The exit reason that corresponds with the participation status, if appliable."
+        is optional collection //This descriptor reference is optional and is a collection.

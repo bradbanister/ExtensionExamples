@@ -1,0 +1,11 @@
+Common ParentEmployment
+    documentation "This is an example of a new common type containing enumerations."
+    enumeration CareerPathway
+        documentation "The parent's career industry pathway and/or job function."
+        is required //This enumeration reference is required.
+    enumeration DiplomaType
+        documentation "The type of diploma the parent holds."
+        is optional //This enumeration reference is optional.
+    enumeration CredentialType
+        documentation "The type of employment credential the parent holds."
+        is optional collection //This enumeration reference is a collection.

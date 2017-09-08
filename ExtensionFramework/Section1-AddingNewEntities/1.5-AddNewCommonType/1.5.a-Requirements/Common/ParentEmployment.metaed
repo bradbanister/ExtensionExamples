@@ -1,0 +1,10 @@
+Common ParentEmployment
+    documentation "This is an example of a new common type."
+    integer FederalEmployerIdentificationNumber
+        documentation "The employer's unique identifier issued by the IRS."
+        is part of identity
+//Since this may be referenced as a collection, it must contain at least one identity property.
+    string EmployerName
+        documentation "The name of the parent's employer."
+        is required
+        max length 75

@@ -1,0 +1,12 @@
+Association StudentGraduationPlanAssociation
+//Because there is no existing association between these two entities,the association's
+//name consists of a simple concatenation of the names of both entities followed by "Association".
+    documentation "This is an example of a new Association."
+    domain entity Student
+        documentation "The student assigned a graduation plan."
+    domain entity GraduationPlan
+        documentation "The graduation plan assigned to the student."
+//The association may contain additional attributes beyond the reference to the associated entities as shown below.
+    date EffectiveDate
+        documentation "The date the graduation plan was put into effect."
+        is part of identity

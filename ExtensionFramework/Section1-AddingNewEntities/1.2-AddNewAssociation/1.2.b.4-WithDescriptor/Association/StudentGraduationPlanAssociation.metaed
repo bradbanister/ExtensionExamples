@@ -1,0 +1,12 @@
+Association StudentGraduationPlanAssociation
+    documentation "This is an example of a new association containing descriptor references."
+    domain entity Student
+        documentation "The student assigned the graduation plan."
+    domain entity GraduationPlan
+        documentation "The graduation plan assigned to the student."
+    descriptor GradeLevel
+        documentation "The student's grade level when the plan was put into effect."
+        is required //This descriptor reference is required.
+    descriptor AcademicSubject
+        documentation "Indicates that the student is focusing on a particular field(s) of study."
+        is optional collection //This descriptor reference is optional and is a collection.

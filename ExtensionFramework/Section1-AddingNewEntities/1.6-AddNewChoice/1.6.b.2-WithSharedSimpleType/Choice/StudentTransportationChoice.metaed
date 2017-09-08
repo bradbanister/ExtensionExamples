@@ -1,0 +1,8 @@
+Choice StudentTransportationChoice
+    documentation "This is an example of a new choice type containing shared types."
+    shared integer Duration
+        documentation "The number of hours per day the student spends on a school bus."
+        is optional
+    shared decimal HoursPerWeek
+        documentation "The number of hours per week the student spends on a school bus."
+        is optional

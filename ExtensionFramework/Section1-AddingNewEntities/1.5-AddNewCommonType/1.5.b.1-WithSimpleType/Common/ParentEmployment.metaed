@@ -1,0 +1,12 @@
+Common ParentEmployment
+    documentation "This is an example of a new common type containing simple types."
+    integer FederalEmployerIdentificationNumber
+        documentation "The employer's unique identifier issued by the IRS."
+        is optional //This simple type is optional.
+    string EmployerName
+        documentation "The name of the parent's employer."
+        is required //This simple type is required.
+        max length 75
+    integer NAICSCode
+        documentation "The industries in which the parent's employer does business."
+        is optional collection //This simple type is a collection.

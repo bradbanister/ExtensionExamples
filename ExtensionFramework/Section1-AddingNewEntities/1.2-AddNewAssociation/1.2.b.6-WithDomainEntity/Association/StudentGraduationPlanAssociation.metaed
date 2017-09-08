@@ -1,0 +1,15 @@
+Association StudentGraduationPlanAssociation
+    documentation "This is an example of a new association containing additional domain entity references."
+    domain entity Student
+        documentation "The student assigned the graduation plan."
+    domain entity GraduationPlan
+        documentation "The graduation plan assigned to the student."
+    domain entity School
+        documentation "The school that will award the student's diploma."
+        is required //This domain entity reference is required.
+    domain entity Staff
+        documentation "The staff responsible for monitoring the student's progress toward graduation."
+        is optional //This domain entity reference is optional.
+    domain entity Assessment
+        documentation "Any assessments the student must pass to graduate."
+        is optional collection //This domain entity reference is a collection.

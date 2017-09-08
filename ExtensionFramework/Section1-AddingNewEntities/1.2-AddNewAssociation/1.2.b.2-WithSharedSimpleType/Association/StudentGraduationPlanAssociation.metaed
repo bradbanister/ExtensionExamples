@@ -1,0 +1,15 @@
+Association StudentGraduationPlanAssociation
+    documentation "This is an example of a new association containing shared types."
+    domain entity Student
+        documentation "The student assigned the graduation plan."
+    domain entity GraduationPlan
+        documentation "The graduation plan assigned to the student."
+    shared decimal HoursPerWeek
+        documentation "The number of hours per week the student must attend classes in order to graduate by the projected date."
+        is required //This shared type is required.
+    shared string Description
+        documentation "A description of the student's graduation plan."
+        is optional //This shared type is optional.
+    shared string DesignatedBy
+        documentation "The person(s) assigning the graduation plan to the student."
+        is optional collection //This shared type is a collection.

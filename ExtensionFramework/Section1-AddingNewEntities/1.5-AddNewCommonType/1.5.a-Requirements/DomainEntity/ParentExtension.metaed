@@ -1,0 +1,6 @@
+Domain Entity Parent additions
+//This is an example of how a new common type may be referenced.
+    common ParentEmployment
+        documentation "Contains details around the parent's employment."
+        is optional collection
+        //The common type must include at least one identity property if it is referenced as a collection.

@@ -1,0 +1,8 @@
+Choice StudentTransportationChoice
+    documentation "This is an example of a new choice type with domain entities."
+    domain entity Parent
+        documentation "The individuals who have permission to pick up the child from school."
+        is required collection
+    domain entity Program
+        documentation "The before- or after-school program to which the student may be released."
+        is required
