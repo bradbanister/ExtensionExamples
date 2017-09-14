@@ -1,0 +1,6 @@
+Domain Entity Parent additions //There are known issues preventing the extension of the Parent domain entity.
+    //Entity extensions inherit documentation from the parent entity. No documentation is permitted.
+    string FavoriteBookTitle
+        documentation "The title of the parent's favorite book."
+        is optional //No identity properties may be included.
+        max length 100

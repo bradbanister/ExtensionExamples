@@ -13,4 +13,4 @@ The extension of the above listed types of entities is endorsed as a rule, despi
 - Extending the Parent domain entity
 - Extending the StudentProgramAssociation association entity or any of its subclasses
 
-Note that the examples provided are illustrative only of supported extension activities and are not designed to serve as examples of properly modeled extension projects.# ExtensionExamples
+Note that the examples provided are illustrative only of supported extension activities and are not designed to serve as examples of properly modeled extension projects.

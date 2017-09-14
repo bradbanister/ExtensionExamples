@@ -1,0 +1,8 @@
+Domain Entity Parent additions //There are known issues preventing the extension of the Parent domain entity.
+//This is an example of a domain entity extension containing shared types.
+    shared decimal GPA
+        documentation "The parent's high school GPA."
+        is optional //This sahred type is optional.
+    shared string Author
+        documentation "The parent's favorite authors."
+        is optional collection //This shared type is a collection.
