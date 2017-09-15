@@ -1,0 +1,32 @@
+Domain Entity School additions
+//There are known issues with extending School and any other subclass of EducationOrganization.
+//This sample file contains an example reference of each possible property type to be included.
+//This sample file contains an example of each possible cardinality statement to be included.
+    string BuildingPaintColors
+        documentation "The paint colors used in the building."
+        is optional collection //This simple type is optional and is a collection.
+        max length 30
+    shared decimal HoursPerWeek
+        documentation "The number of hours the school is open per week."
+        is required //This shared type is required.
+    //There are known issues with including required properties on extended domain entities.
+    //A back-up cardinality statement is provided below.
+        //is optional //This shared type is optional.
+    common Credential
+        documentation "The credentials held by the school principal."
+        is required collection //This common type is required and is a collection.
+    //There are known issues with including required properties on extended domain entities.
+    //A back-up cardinality statement is provided below.
+        //is optional collection //This common type is optional and is a collection.
+    descriptor AcademicSubject
+        documentation "The academic focus areas of the school."
+        is optional collection  //This descriptor reference is optional and is a collection.
+    enumeration DiplomaType
+        documentation "The type of diploma the principal is required to have earned."
+        is optional //This enumeration is optional.
+    domain entity Assessment
+        documentation "The assessment a prospective student must pass to enroll."
+        is optional //This domain entity reference is optional.
+    association StaffEducationOrganizationEmploymentAssociation
+        documentation "The employment record of the primary contact for the school."
+        is optional //This association reference is optional.

@@ -1,4 +1,4 @@
-Domain Entity Parent additions //There are known issues preventing the extension of the Parent domain entity.
+Domain Entity Parent additions
 //This is an example of a domain entity extension containing shared types.
     shared decimal GPA
         documentation "The parent's high school GPA."
@@ -6,3 +6,7 @@ Domain Entity Parent additions //There are known issues preventing the extension
     shared string Author
         documentation "The parent's favorite authors."
         is optional collection //This shared type is a collection.
+    //shared string City
+        //documentation "The city in which the parent was born."
+        //is required //This shared type is required.
+    //There are known issues with including required properties on extended domain entities.

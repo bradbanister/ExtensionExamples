@@ -1,8 +1,0 @@
-Domain Entity Parent additions //There are known issues preventing the extension of the Parent domain entity.
-//This is an example of a domain entity extension containing enumerations.
-    enumeration DiplomaType
-        documentation "The type of diploma the parent holds."
-        is optional //This enumeration is optional.
-    enumeration Race
-        documentation "The parent's race."
-        is optional collection //This enumeration is a collection.

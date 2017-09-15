@@ -1,4 +1,4 @@
-Domain Entity Parent additions //There are known issues preventing the extension of the Parent domain entity.
+Domain Entity Parent additions
     //Entity extensions inherit documentation from the parent entity. No documentation is permitted.
     string FavoriteBookTitle
         documentation "The title of the parent's favorite book."

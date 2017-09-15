@@ -1,4 +1,4 @@
-Domain Entity Parent additions //There are known issues preventing the extension of the Parent domain entity.
+Domain Entity Parent additions
 //This is an example of a domain entity extension containing simple types.
     date GraduationDate
         documentation "The date the parent graduated from high school."
@@ -7,3 +7,8 @@ Domain Entity Parent additions //There are known issues preventing the extension
         documentation "The title of the parent's favorite book."
         is optional collection ///This simple type is a collection.
         max length 100
+    //string FavoriteTree
+        //documentation "The Parent's favorite tree."
+        //is required //This simple type is required.
+        //max length 50
+    //There are known issues with including required properties on extended domain entities.

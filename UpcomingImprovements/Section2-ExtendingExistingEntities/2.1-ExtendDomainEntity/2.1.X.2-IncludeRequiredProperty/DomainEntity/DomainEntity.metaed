@@ -1,0 +1,25 @@
+Domain Entity Parent additions
+//This is an example of a domain entity extension containing required properties.
+//This sample contains an example reference of every possible property type to be included.
+    string FavoriteBookTitle
+        documentation "The title of the parent's favorite book."
+        is required collection
+        max length 100
+    shared string Author
+        documentation "The parent's favorite author."
+        is required
+    common Language
+        documentation "The appropriate language for communication with the parent."
+        is required
+    descriptor LevelOfEducation
+        documentation "The parent's highest level of education."
+        is required
+    enumeration Race
+        documentation "The parent's race."
+        is required collection
+    domain entity Staff
+        documentation "The staff member assigned as the main point of contact for the parent."
+        is required
+    association StudentProgramAssociation
+        documentation "Parents must provide support to at least one program in which their child or children are enrolled."
+        is required collection

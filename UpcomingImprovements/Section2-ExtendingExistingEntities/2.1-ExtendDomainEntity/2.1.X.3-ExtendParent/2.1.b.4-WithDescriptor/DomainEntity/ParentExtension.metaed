@@ -1,8 +1,0 @@
-Domain Entity Parent additions //There are known issues preventing the extension of the Parent domain entity.
-//This is an example of a domain entity extension containing descriptor references.
-    descriptor LevelOfEducation
-        documentation "The parent's highest level of education."
-        is optional //This descriptor reference is optional.
-    descriptor AcademicSubject
-        documentation "The academic subjects in which the parent majored in college."
-        is optional collection  //This descriptor reference is a collection.

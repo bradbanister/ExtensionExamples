@@ -1,4 +1,4 @@
-Domain Entity Parent additions //There are known issues preventing the extension of the Parent domain entity.
+Domain Entity Parent additions
 //This is an example of a domain entity extension containing other domain entity references.
     domain entity Student
         documentation "The parent's student record, if the parent attended school in the district."
@@ -6,3 +6,7 @@ Domain Entity Parent additions //There are known issues preventing the extension
     domain entity School
         documentation "The schools in the school system that the parent attended."
         is optional collection //This domain entity reference is a collection.
+    //domain entity Staff
+        //documentation "The staff member assigned as the main point of contact for the parent."
+        //is required //This domain entity reference is required.
+    //There are known issues with including required properties on extended domain entities.

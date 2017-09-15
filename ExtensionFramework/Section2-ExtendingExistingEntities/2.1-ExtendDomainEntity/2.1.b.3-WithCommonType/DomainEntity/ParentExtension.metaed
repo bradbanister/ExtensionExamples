@@ -1,8 +1,12 @@
-Domain Entity Parent additions //There are known issues preventing the extension of the Parent domain entity.
+Domain Entity Parent additions
 //This is an example of a domain entity extension containing common types.
-    common Language
-        documentation "The appropriate language for communication with the parent."
-        is optional //This common type is optional.
+    common CTEProgram
+        documentation "Information about the CTE program the parent completed, if applicable."
+        is optional //THis common type is optional.
     common Disability
         documentation "The parent's diabilities."
         is optional collection //This common type is a collection.
+    //common Language
+        //documentation "The appropriate language for communication with the parent."
+        //is required //This common type is required.
+    //There are known issues with including required properties on extended domain entities.

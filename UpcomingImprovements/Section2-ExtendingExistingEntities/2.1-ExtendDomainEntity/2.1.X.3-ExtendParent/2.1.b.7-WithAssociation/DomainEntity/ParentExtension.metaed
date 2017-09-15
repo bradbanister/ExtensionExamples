@@ -1,8 +1,0 @@
-Domain Entity Parent additions //There are known issues preventing the extension of the Parent domain entity.
-//This is an example of a domain entity extension containing association references.
-    association StaffEducationOrganizationEmploymentAssociation
-        documentation "The parent's employment record, if employed by the school system."
-        is optional //This association reference is optional.
-    association StaffEducationOrganizationAssignmentAssociation
-        documentation "The parent's assignment records, if employed by the school system."
-        is optional collection //This association reference is a collection.
