@@ -1,0 +1,12 @@
+Association StudentParentAssociation additions
+//This is an example of an extended association containing common types.
+    common Telephone
+        documentation "The student's primary contact telephone number when they reside with the parent."
+        is optional //This common type is optional.
+    common RequiredAssessment
+        documentation "Any assessments the parent was required to pass to regain custody of the student."
+        is optional collection //This common type is a collection.
+    //common Address
+        //documentation "The address of the residence where the student and parent live together."
+        //is required //This common type is required.
+    //There are known issues with including required properties on extended associations.

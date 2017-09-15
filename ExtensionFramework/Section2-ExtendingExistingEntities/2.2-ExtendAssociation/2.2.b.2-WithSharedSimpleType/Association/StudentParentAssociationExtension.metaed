@@ -1,0 +1,12 @@
+Association StudentParentAssociation additions
+//This is an example of an extended association containing shared types.
+    shared string CaseNumber
+        documentation "The case number of a custodial hearing."
+        is optional //This shared type is optional.
+    shared string Author
+        documentation "The authors of the books that the student and parent enjoy."
+        is optional collection //This shared type is a collection.
+    //shared string Description
+        //documentation "A description of the relationship."
+        //is required //This shared type is required.
+    //There are known issues with including required properties on extended associations.

@@ -1,0 +1,12 @@
+Association StudentParentAssociation additions
+//This is an example of an extended association containing descriptor references.
+    descriptor SpecialEducationSetting
+        documentation "The special education setting that the parent prefers for the student."
+        is optional //This descriptor reference is optional.
+    descriptor Discipline
+        documentation "The discipline methods that the parent has approved for that student."
+        is optional collection //This descriptor reference is a collection.
+    //descriptor Language
+        //documentation "The language in which the parent and student primarily communicate."
+        //is required //This simple type is required.
+    //There are known issues with including required properties on extended associations.

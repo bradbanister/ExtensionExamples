@@ -1,0 +1,12 @@
+Association StudentParentAssociation additions
+//This is an example of an extended association containing domain entity references.
+    domain entity Program
+        documentation "A program that the parent completed to provide increased support for the student."
+        is optional //This domain entity reference is optional.
+    domain entity Session
+        documentation "The sessions for which the student/parent relationship were applicable."
+        is optional collection //This domain entity reference is a collection.
+    //domain entity Staff
+        //documentation "The staff member assigned to lead communication with the parent regarding the student."
+        //is required //This domain entity reference is required.
+    //There are known issues with including required properties on extended associations.

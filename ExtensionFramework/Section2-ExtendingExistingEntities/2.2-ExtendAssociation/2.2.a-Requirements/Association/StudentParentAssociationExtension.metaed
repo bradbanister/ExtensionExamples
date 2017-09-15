@@ -1,0 +1,12 @@
+Association StudentParentAssociation additions
+    //Entity extensions inherit documentation from the parent entity. No documentation is permitted.
+    string FavoriteBookTitle //At least one property must be included.
+        documentation "The title of the book that the student and parent most enjoy reading together."
+        is optional //No identity properties may be included.
+        max length 100
+    shared string ContactRestrictions
+        documentation "Any previous contact restrictions that are not currently in place."
+        is optional
+        with context Prior
+        //The shared string ContactRestrictions is already included in StudentParentAssociation,
+        //so it may not be included in the extension without context.

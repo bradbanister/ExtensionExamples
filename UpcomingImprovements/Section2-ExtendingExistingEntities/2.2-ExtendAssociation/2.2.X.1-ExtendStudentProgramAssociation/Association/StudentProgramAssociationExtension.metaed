@@ -1,0 +1,31 @@
+Association StudentProgramAssociation additions
+//There are known issues with extending StudentProgramAssociation and any of its subclasses.
+//This sample file contains an example reference of each possible property type to be included.
+    string ProgramParticipationStatus
+        documentation "The status of the student's participation in the program."
+        is required
+    //There are known issues with including required properties on extended associations.
+    //A back-up cardinality statement is provided below.
+        //is optional
+        max length 40
+    shared decimal HoursPerWeek
+        documentation "The number of hours per week the student spends in the program."
+        is optional
+    common Address
+        documentation "The addresses where the program meets."
+        is optional collection
+    descriptor AcademicSubject
+        documentation "The academic focus areas of the program."
+        is required collection
+    //There are known issues with including required properties on extended associations.
+    //A back-up cardinality statement is provided below.
+        //is optional collection
+    enumeration CareerPathway
+        documentation "The career pathway or industry focus area of the program."
+        is optional
+    domain entity Assessment
+        documentation "Any assessments the student must pass to be eligible for the program."
+        is optional collection
+    association StaffEducationOrganizationAssignmentAssociation
+        documentation "The staff assignment of the staff assigned to lead the program."
+        is optional

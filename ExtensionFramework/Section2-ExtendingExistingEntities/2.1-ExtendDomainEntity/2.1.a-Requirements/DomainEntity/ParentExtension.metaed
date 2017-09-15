@@ -1,6 +1,12 @@
 Domain Entity Parent additions
     //Entity extensions inherit documentation from the parent entity. No documentation is permitted.
-    string FavoriteBookTitle
+    string FavoriteBookTitle //At least one property must be included.
         documentation "The title of the parent's favorite book."
         is optional //No identity properties may be included.
         max length 100
+    inline common Name
+        documentation "The name of the parent's favorite author."
+        is optional
+        with context FavoriteAuthor
+        //The common type Name is already included in the Parent domain entity,
+        //so it may not be included in the extension without context.

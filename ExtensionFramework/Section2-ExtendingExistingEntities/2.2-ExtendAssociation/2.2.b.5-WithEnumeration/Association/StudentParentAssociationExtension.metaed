@@ -1,0 +1,12 @@
+Association StudentParentAssociation additions
+//This is an example of an extended association containing enumerations.
+    enumeration MeetingDay
+        documentation "The day of the week that the parent prefers for in-person meetings."
+        is optional //This enumeration is optional.
+    enumeration EducationPlan
+        documentation "The types of education plans that the parent has authorized for the student."
+        is optional collection //This enumeration is a collection.
+    //enumeration MediumOfInstruction
+        //documentation "The medium of instruction that the parent prefers for the student."
+        //is required //This enumeration is required.
+    //There are known issues with including required properties on extended associations.

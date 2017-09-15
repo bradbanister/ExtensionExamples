@@ -1,0 +1,25 @@
+Association StudentParentAssociation additions
+//This is an example of an extended association containing required properties.
+//This sample contains an example reference of every possible property type to be included.
+    string FavoriteBookTitle
+        documentation "The title of the book that the student and parent most enjoy reading together."
+        is required
+        max length 100
+    shared string Author
+        documentation "The authors of the books that the student and parent enjoy."
+        is required collection
+    common Address
+        documentation "The address of the residence where the student and parent live together."
+        is required
+    descriptor Language
+        documentation "The language in which the parent and student primarily communicate."
+        is required
+    enumeration MediumOfInstruction
+        documentation "The medium of instruction that the parent prefers for the student."
+        is required
+    domain entity Staff
+        documentation "The staff members assigned to lead communication with the parent regarding the student."
+        is required collection
+    association StudentProgramAssociation
+        documentation "The program in which the student is enrolled for which the parent provides support."
+        is required
